@@ -13,6 +13,12 @@
             collectable.type = type;
             
             /*
+create
+
+
+
+
+
              * Extra adjustments or configuration.
              */
             switch (type.assetKey) {
