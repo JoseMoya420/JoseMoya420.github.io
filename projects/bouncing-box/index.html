@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -14,7 +14,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 500px;  /* <--- Change me! */
+			left: 0px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -24,7 +24,7 @@
 
 </head>
 <body class="board">
-	<!-- HTML for the box --> 
+	<!-- HTML for the box -->
 	<div class="box">?</div>
 
 	<script>
@@ -61,44 +61,26 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			var positionX=(19);
-			positionX=positionX+10;
-			moveBoxTo(positionX);
+			var position;
+			var points;
+			var speed;
 
-			positionX=positionX+10;
-			moveBoxTo(positionX);
+			position=0;
+			points=0;
+			speed=10;
 
-			positionX=positionX+10;
-			moveBoxTo(positionX);
-
-
-			positionX=positionX+10;
-			moveBoxTo(positionX);
-
-			positionX=positionX+10;
-			moveBoxTo(positionX);
+			box.css('left', position);
+			box.text(points);
 
 
-			var points=(0);
-			points=points+1;
-			point=points+1;
-			points=points+1;
-			points=points+1;
-
-			var speed=10;
+			
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update(speed) {
-				moveBoxTo(positionX);
+			function update() {
 				
-
-				
-
-
-
 
 			};
 
@@ -108,9 +90,8 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				positionX=0;
-				changeBoxText(points);
-				speed=3;
+				
+
 
 			};
 		})();
