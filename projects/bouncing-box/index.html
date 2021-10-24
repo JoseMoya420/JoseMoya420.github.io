@@ -26,7 +26,7 @@
 </head>
 <body class="board">
 	<!-- HTML for the box -->
-	<div class="box">?</div>
+	<div class="box">0</div>
 
 	<script>
 		(function(){
@@ -83,13 +83,13 @@
 			function update() {
 			setInterval(update,50);
 			update = function() {
-    position = position + speed;
-    box.css('left', position);
-	if(position > boardWidth) {
-    position = 0;
-	if(position > boardWidth) {
-    position = 0;
-	points=points+1;
+    		position = position + speed;
+    		box.css('left', position);
+			if(position > boardWidth) {
+    		position = 0;
+			if(position > boardWidth) {
+    		position = 0;
+			points=points+1;
 }
 
 }
@@ -107,8 +107,8 @@
 				box.on('click', handleBoxClick);
 
 				handleBoxClick = function() {
-  speed = speed + .2;
-  position = position+(speed*direction);
+ 				 speed = speed + .2;
+  				position = position+(speed*direction);
 }
 
 
