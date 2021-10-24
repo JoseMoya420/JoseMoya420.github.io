@@ -86,8 +86,9 @@
     		position = position + speed;
     		box.css('left', position);
 			if(position > boardWidth) {
-    		position = 0;
-			if(position > boardWidth) {
+    		direction = -1;
+			if(position > 0) {
+				direction=1
     		position = 0;
 			points=points+1;
 }
