@@ -33,6 +33,10 @@ circles.push(circle);
 
         // TODO 3 / 8 : Call the drawCircle() function 
             drawCircle();
+            drawCircle();
+            drawCircle();
+            drawCircle();
+            drawCircle();
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
