@@ -97,12 +97,14 @@ var init = function (window) {
                 if (circle.y > canvas.height) {
                     circle.y = 0;
                 }
-                if (canvas.height > circle.y) {
-                    canvas.height = 0;
+                if(circle.y >0){
+                     circle.y=canvas.height
                 }
-                if (canvas.width > circle.x) {
-                    canvas.width = 0;
+                if (circle.x >0){
+                    circle.x=canvas.width
                 }
+            }
+            
                 // YOUR TODO 7 CODE ENDS HERE //////////////////////////
             }
 
