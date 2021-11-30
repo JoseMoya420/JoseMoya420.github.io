@@ -22,6 +22,7 @@ var init = function (window) {
         // TODO 1 : Declare and initialize our variables
 var circle;
 var circles=[];
+var eachCircle=0;
 
         // TODO 2 : Create a function that draws a circle 
         function drawCircle(){
@@ -32,6 +33,14 @@ circles.push(circle);
 }
 
         // TODO 3 / 8 : Call the drawCircle() function 
+         for (var i=0;i <= 100; i++){
+             drawCircle();
+             
+         }
+             
+         
+        
+        
             drawCircle();
             drawCircle();
             drawCircle();
@@ -64,11 +73,15 @@ circles.push(circle);
 
 
             // TODO 9 : Iterate over the array
-           
-            
-        }
+           for ( var i=0;i<circles.length;i++){
+                physikz=[i];
+           }
+           for (var i=0; i<circles.length;i++){
+               game=[i];
+           }
+        
     
-        /* 
+        /*
         This Function should check the position of a circle that is passed to the 
         Function. If that circle drifts off the screen, this Function should move
         it to the opposite side of the screen.
@@ -81,9 +94,16 @@ circles.push(circle);
             }
             
             // TODO 7 : YOUR CODE STARTS HERE //////////////////////
-            
-
-
+            //if the circle has gone past the UP side of the screen place it on the DOWN
+            if ( circle.y > canvas.height){
+                circle.y = 0;
+            }
+            if (canvas.height > circle.y){
+                canvas.height=0;
+            }
+            if (canvas.width > circle.x){
+                canvas.width=0;
+            }
             // YOUR TODO 7 CODE ENDS HERE //////////////////////////
         }
         
